@@ -12,7 +12,7 @@
 				销售简报
 			</view>
 			<view class="action">
-				<span class="iconfont icon-kehu"></span>
+				本月<text class="cuIcon-unfold"></text>
 			</view>
 		</view>
 		

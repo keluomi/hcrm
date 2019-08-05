@@ -10,25 +10,34 @@
 			<fui-grid :gridData="cuIconList"></fui-grid>
 			<view class="cu-bar bg-white solid-bottom margin-top">
 				<view class="action">
-					<text class="cuIcon-title text-orange"></text> 我的任务
+					<text class="cuIcon-task text-jianniaolan"></text> 我的任务
+				</view>
+				<view class="action">
+					<text class="cuIcon-right text-jianniaolan"></text>
 				</view>
 			</view>
-			<my-task-list :listData="taskListData" :isArrow="isArrow"></my-task-list>
+			<my-task-list :isArrow="false" :listData="taskListData"></my-task-list>
 			
 			
 			<view class="cu-bar bg-white solid-bottom margin-top">
 				<view class="action">
-					<text class="cuIcon-title text-orange"></text> 今日日程
+					<text class="cuIcon-richeng text-jianniaolan"></text> 今日日程
+				</view>
+				<view class="action">
+					<text class="cuIcon-right text-jianniaolan"></text>
 				</view>
 			</view>
-			<today-trip-list :listData="todayTripData"></today-trip-list>
+			<today-trip-list :isArrow="false" :listData="todayTripData"></today-trip-list>
 			
 			<view class="cu-bar bg-white solid-bottom margin-top">
 				<view class="action">
-					<text class="cuIcon-title text-orange"></text> 今日日程
+					<text class="cuIcon-shenpi text-jianniaolan"></text> 待审批
+				</view>
+				<view class="action">
+					<text class="cuIcon-right text-jianniaolan"></text>
 				</view>
 			</view>
-			<today-trip-list :listData="todayTripData"></today-trip-list>
+			<today-trip-list :isArrow="false" :listData="todoListData"></today-trip-list>
 			
 			<view class="cu-tabbar-height"></view>
 		</scroll-view>
@@ -48,15 +57,11 @@
 		data() {
 			return {
 				isArrow: false,
-				taskListData: [{url:'', text:'今日需联系客户'},
-							{url:'', text:'分配给我的线索'},
-							{url:'', text:'分配给我的客户'},
-							{url:'', text:'待审核合同'},
-							{url:'', text:'待审核回款'},
-							{url:'', text:'待汇款提醒'},
-							{url:'', text:'即将到期的合同'}],
-				todayTripData: [],
-				todoListData: [],
+				taskListData: [{url:'', icon:'', text:'去国贸拜访客户',subText:'2018-09-09'}],
+				todayTripData: [{url:'', icon:'', text:'今天下午一点去三元桥',subText:'2018-09-09'},
+								{url:'',icon:'', text:'今天下午4点去银行',subText:'2019-01-04'}],
+				todoListData: [{url:'', icon:'', text:'回款合同审批',subText:'2018-09-09'},
+								{url:'',icon:'', text:'回款确认',subText:'2019-01-04'}],
 				cuIconList: [{
 					cuIcon: 'log',
 					color: 'red',
