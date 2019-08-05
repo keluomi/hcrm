@@ -24,8 +24,6 @@
 
 			</view>
 			
-			
-			
 		</view>
 	</view>
 </template>
