@@ -85,7 +85,7 @@
 				}, {
 					cuIcon: 'hetong',
 					color: 'blue',
-					name: '合同'
+					name: '企业通讯录'
 				}]
 			};
 		}
