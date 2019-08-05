@@ -1,12 +1,5 @@
 <template>
 	<view>
-<!-- 		<view class="cu-bar bg-jiannianlan">
-			<view class="action">
-				<text class="cuIcon-titles text-jianniaolan"></text>
-				<text class="text-xl text-bold text-white">{{currentTitle}} {{PageCur}}</text>
-			</view>
-		</view>
-		 -->
 		<scroll-view scroll-y>
 			
 			<todo-index v-if="PageCur=='todoIndex'"></todo-index>
