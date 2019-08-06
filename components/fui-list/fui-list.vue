@@ -43,9 +43,6 @@
 </script>
 
 <style lang="scss">
-
-	// @import "../../style/iconfont.css";
-	// @import "../../style/app.css";
- //   
+   
    
 </style>
