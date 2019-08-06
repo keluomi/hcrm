@@ -21,15 +21,22 @@
 				</view>
 			</view>
 
-
+<!-- 
 				<view class="qiun-charts3">
-					<!--#ifndef MP-ALIPAY -->
-					<canvas canvas-id="canvasArcbar1" id="canvasArcbar1" class="charts3"></canvas>
-					<canvas canvas-id="canvasArcbar2" id="canvasArcbar2" class="charts3" style="margin-left: 250upx;"></canvas>
-					<canvas canvas-id="canvasArcbar3" id="canvasArcbar3" class="charts3" style="margin-left: 500upx;"></canvas>
-					<!--#endif-->
+					<canvas canvas-id="canvasArcbar1" id="canvasArcbar1" class="charts3" style="margin-left: 50upx;"></canvas>
+					<canvas canvas-id="canvasArcbar2" id="canvasArcbar2" class="charts3" style="margin-left: 280upx;"></canvas>
+					<canvas canvas-id="canvasArcbar3" id="canvasArcbar3" class="charts3" style="margin-left: 520upx;"></canvas>
 					
-				</view>			
+				</view>
+					 -->		
+				<view class="grid  text-center col-3" style="height: 200rpx;">
+
+						<canvas canvas-id="canvasArcbar1" id="canvasArcbar1" class="charts3"></canvas>
+						<canvas canvas-id="canvasArcbar2" id="canvasArcbar2" class="charts3"></canvas>
+						<canvas canvas-id="canvasArcbar3" id="canvasArcbar3" class="charts3"></canvas>
+
+				
+				</view>
 			<fui-list :listData="settingList"></fui-list>
 			
 			<view class="cu-tabbar-height"></view>
@@ -106,8 +113,8 @@
 			},
 			onLoad() {
 				_self = this;
-				this.cWidth3=uni.upx2px(200);//这里要与样式的宽高对应
-				this.cHeight3=uni.upx2px(200);//这里要与样式的宽高对应
+				this.cWidth3=uni.upx2px(170);//这里要与样式的宽高对应
+				this.cHeight3=uni.upx2px(170);//这里要与样式的宽高对应
 				this.arcbarWidth=uni.upx2px(10);
 				
 				let data1 = {
@@ -143,16 +150,9 @@
 </script>
 
 <style lang="scss">
-	/*样式的width和height一定要与定义的cWidth和cHeight相对应*/
-	.qiun-charts3 {
-		width: 750upx;
-		height: 250upx;
-		background-color: #FFFFFF;
-		position: relative;
-	}
 
 	.charts3 {
-		position: absolute;
+		align: center;
 		width: 250upx;
 		height: 250upx;
 		background-color: #FFFFFF;

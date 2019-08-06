@@ -3,14 +3,14 @@
 		<scroll-view scroll-y class="page">
 			<cu-custom :bgImage="'/static/header_bg.png'">
 				<block slot="content">
-					办公
+					办公 
 				</block>
 			</cu-custom>
 
 			<fui-grid :gridData="cuIconList"></fui-grid>
 			<view class="cu-bar bg-white solid-bottom margin-top">
 				<view class="action">
-					<text class="cuIcon-task text-jianniaolan"></text> 我的任务
+					<text class="cuIcon-task text-jianniaolan"></text> 今日任务
 				</view>
 				<view class="action">
 					<text class="cuIcon-right text-jianniaolan"></text>
@@ -35,6 +35,7 @@
 				</view>
 				<view class="action">
 					<text class="cuIcon-right text-jianniaolan"></text>
+
 				</view>
 			</view>
 			<today-trip-list :isArrow="false" :listData="todoListData"></today-trip-list>
