@@ -15,25 +15,39 @@
 				"navigationBarTitleText": "组件"
 			}
 		}
-        ,{
-            "path" : "pages/crm/index",
-            "style" : {
-				"navigationBarTitleText": "组件2"
-			}
-        }
-        ,{
-            "path" : "pages/mine/index",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/oa/index",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/todo/index",
-            "style" : {}
-        }
+       
     ],
+	"subPackages": [{
+        "root": "pageTodo",
+        "pages": [{
+            "path": "index",
+            "style": {}
+        }]
+    },{
+        "root": "pageCrm",
+        "pages": [{
+            "path": "index",
+            "style": {}
+			}]
+    },{
+		"root": "pageOa",
+		"pages": [{
+			"path": "index",
+			"style": {}
+		}]
+    },{
+		"root": "pageMine",
+		"pages": [{
+			"path": "index",
+			"style": {}
+		}]
+    }],
+	"preloadRule": {
+        "pages/index/index": {
+            "network": "all",
+            "packages": ["pageTodo","pageCrm","pageOa","pageMine"]
+        }
+    },
     "globalStyle": {
     	"navigationBarTextStyle": "black",
     	"navigationBarTitleText": "登陆模板",

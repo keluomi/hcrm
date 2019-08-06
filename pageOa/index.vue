@@ -46,8 +46,8 @@
 </template>
 
 <script>
-	import fuiGrid from '../../components/fui-grid/fui-grid.vue'  
-	import fuiList from '../../components/fui-list/fui-list.vue'  
+	import fuiGrid from '@/components/fui-grid/fui-grid.vue'  
+	import fuiList from '@/components/fui-list/fui-list.vue'  
 	export default {
 		components:{
 			fuiGrid,
@@ -58,7 +58,7 @@
 		data() {
 			return {
 				isArrow: false,
-				taskListData: [{url:'', icon:'', text:'去国贸拜访客户',subText:'2018-09-09'}],
+				taskListData: [{url:'/pages/mine/index', icon:'', text:'去国贸拜访客户',subText:'2018-09-09'}],
 				todayTripData: [{url:'', icon:'', text:'今天下午一点去三元桥',subText:'2018-09-09'},
 								{url:'',icon:'', text:'今天下午4点去银行',subText:'2019-01-04'}],
 				todoListData: [{url:'', icon:'', text:'回款合同审批',subText:'2018-09-09'},

@@ -24,7 +24,7 @@
 
 <script>
 	
-	import fuiGrid from '../../components/fui-grid/fui-grid.vue'  
+	import fuiGrid from '@/components/fui-grid/fui-grid.vue'  
 	export default {
 		components:{
 			fuiGrid

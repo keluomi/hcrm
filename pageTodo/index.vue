@@ -14,14 +14,14 @@
 
 <script>
 
-	import fuiList from '../../components/fui-list/fui-list.vue'  
+	import fuiList from '@/components/fui-list/fui-list.vue'  
 	export default {
 		components:{
 			fuiList	
 		},
 		data() {
 			return {
-				listData: [{icon:'lianxiren',url:'', text:'今日需联系客户'},
+				listData: [{icon:'lianxiren',url:'/pageMine/index', text:'今日需联系客户'},
 							{icon:'xiansuo',url:'',  text:'分配给我的线索'},
 							{icon:'kehu',url:'', text:'分配给我的客户'},
 							{icon:'hetong',url:'', text:'待审核合同'},
