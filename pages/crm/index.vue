@@ -71,7 +71,7 @@
 					cuIcon: 'kehu',
 					color: 'orange',
 					name: '客户',
-					url: '/pages/crm/customer/list/list'
+					url: '/pages/crm/customer/list'
 				}, {
 					cuIcon: 'gonghai',
 					color: 'yellow',
@@ -80,7 +80,7 @@
 					cuIcon: 'lianxiren',
 					color: 'olive',
 					name: '联系人',
-					url: '/pages/crm/contact/list/list'
+					url: '/pages/crm/contact/list'
 				}, {
 					cuIcon: 'shangji',
 					color: 'cyan',
