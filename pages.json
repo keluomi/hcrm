@@ -34,23 +34,23 @@
             "style" : {}
         }
         ,{
-            "path" : "pages/crm/customer/list/list",
+            "path" : "pages/crm/customer/list",
             "style" : {}
         }
         ,{
-            "path" : "pages/crm/customer/detail/detail",
+            "path" : "pages/crm/customer/detail",
             "style" : {}
         }
         ,{
-            "path" : "pages/crm/customer/edit/edit",
+            "path" : "pages/crm/customer/edit",
             "style" : {}
         }
         ,{
-            "path" : "pages/crm/contact/list/list",
+            "path" : "pages/crm/contact/list",
             "style" : {}
         }
         ,{
-            "path" : "pages/crm/contact/detail/detail",
+            "path" : "pages/crm/contact/detail",
             "style" : {}
         }
     ],
