@@ -6,8 +6,27 @@
 				联系人详情
 			</block>
 		</cu-custom>
-	
-		<scroll-view scroll-x class="bg-white nav">
+	<view class="cu-card case no-card" >
+		<view class="cu-item shadow">
+			<view class="cu-list menu-avatar">
+				<view class="cu-item">
+					<view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+					<view class="content flex-sub">
+						<view class="text-grey">张文杰</view>
+						<view class="text-gray text-sm flex justify-between">
+								13521783226
+						</view>
+					</view>
+					<view class="action">
+						<text class="cuIcon-right text-jianniaolan"></text>
+					</view>
+				</view>
+				
+			</view>
+		</view>
+	</view>
+	    
+		<scroll-view scroll-x class="bg-white nav margin-top">
 			<view class="flex text-center">
 				<view class="cu-item flex-sub" :class="'0'==TabCur?'text-orange cur':''"  @tap="tabSelect" :data-id="0">
 					跟进记录
@@ -72,11 +91,11 @@
 				<form>
 					<view class="cu-form-group">
 						<view class="title">姓名</view>
-						<view>张三</view>
+						<view>张文杰</view>
 					</view>
 					<view class="cu-form-group">
 						<view class="title">客户名称</view>
-						<view>张雅萌</view>
+						<view>张文杰</view>
 					</view>
 					<view class="cu-form-group">
 						<view class="title">手机</view>
