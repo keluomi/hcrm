@@ -14,7 +14,7 @@
 
 <script>
 
-	import fuiList from '../../components/fui-list/fui-list.vue'  
+	import fuiList from '@/components/fui-list/fui-list.vue'  
 	export default {
 		components:{
 			fuiList	

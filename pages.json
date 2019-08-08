@@ -33,6 +33,26 @@
             "path" : "pages/todo/index",
             "style" : {}
         }
+        ,{
+            "path" : "pages/crm/customer/list/list",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/crm/customer/detail/detail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/crm/customer/edit/edit",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/crm/contact/list/list",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/crm/contact/detail/detail",
+            "style" : {}
+        }
     ],
     "globalStyle": {
     	"navigationBarTextStyle": "black",

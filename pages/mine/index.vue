@@ -44,9 +44,9 @@
 </template>
 
 <script>
-	import fuiGrid from '../../components/fui-grid/fui-grid.vue'  
-	import fuiList from '../../components/fui-list/fui-list.vue'  
-	import uCharts from '../../components/u-charts/u-charts.js';
+	import fuiGrid from '@/components/fui-grid/fui-grid.vue'  
+	import fuiList from '@/components/fui-list/fui-list.vue'  
+	import uCharts from '@/components/u-charts/u-charts.js';
 	
 	var _self;
 	var canvaArcbar1;

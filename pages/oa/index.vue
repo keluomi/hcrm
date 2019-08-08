@@ -46,8 +46,8 @@
 </template>
 
 <script>
-	import fuiGrid from '../../components/fui-grid/fui-grid.vue'  
-	import fuiList from '../../components/fui-list/fui-list.vue'  
+	import fuiGrid from '@/components/fui-grid/fui-grid.vue'  
+	import fuiList from '@/components/fui-list/fui-list.vue'  
 	export default {
 		components:{
 			fuiGrid,

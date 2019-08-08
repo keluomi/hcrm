@@ -24,7 +24,7 @@
 
 <script>
 	
-	import fuiGrid from '../../components/fui-grid/fui-grid.vue'  
+	import fuiGrid from '@/components/fui-grid/fui-grid.vue'  
 	export default {
 		components:{
 			fuiGrid
@@ -70,7 +70,8 @@
 				}, {
 					cuIcon: 'kehu',
 					color: 'orange',
-					name: '客户'
+					name: '客户',
+					url: '/pages/crm/customer/list/list'
 				}, {
 					cuIcon: 'gonghai',
 					color: 'yellow',
@@ -78,7 +79,8 @@
 				}, {
 					cuIcon: 'lianxiren',
 					color: 'olive',
-					name: '联系人'
+					name: '联系人',
+					url: '/pages/crm/contact/list/list'
 				}, {
 					cuIcon: 'shangji',
 					color: 'cyan',

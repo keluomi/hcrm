@@ -2,6 +2,7 @@
 	<view>
 		<view class="cu-list grid" :class="['col-' + gridCol,gridBorder?'':'no-border']">
 			<view class="cu-item" v-for="(item,index) in gridData" :key="index" v-if="index<gridCol*2">
+				<navigator  hover-class="none" :url="item.url" :open-type="item.openType?item.openType:'navigate'">
 				<view v-if="gridMode !='col'">
 					<view>
 						<view :class="['cuIcon-' + item.cuIcon,'text-' + item.color]">
@@ -29,7 +30,7 @@
 					</view>
 				</view>
 
-
+			</navigator>
 			</view>
 			
 		</view>

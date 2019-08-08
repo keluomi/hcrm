@@ -41,10 +41,10 @@
 </template>
 
 <script>
-	import todoIndex from '../todo/index.vue' 
-	import crmIndex from '../crm/index.vue' 
-	import oaIndex from '../oa/index.vue' 
-	import mineIndex from '../mine/index.vue' 
+	import todoIndex from '@/pages/todo/index.vue' 
+	import crmIndex from '@/pages/crm/index.vue' 
+	import oaIndex from '@/pages/oa/index.vue' 
+	import mineIndex from '@/pages/mine/index.vue' 
 	
 	export default {
 		components:{
