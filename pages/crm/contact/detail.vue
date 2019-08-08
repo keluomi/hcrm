@@ -166,7 +166,7 @@
 			
 
 		<view class="cu-bar bg-white shadow foot">
-			<view class="cu-bar border-custom">
+			<view class="cu-bar border-custom" @click="toEditFollow">
 				<view class="action">
 					<text class="cuIcon-text text-jianniaolan"></text>写进度
 				</view>
@@ -209,6 +209,7 @@
 <script>
 	
 	import fuiList from '@/components/fui-list/fui-list.vue'  
+	import navigateUtil from '@/utils/navigateUtil.js'
 	export default {
 		components:{
 			shangjiList:fuiList,
@@ -229,6 +230,9 @@
 			tabSelect(e) {
 				this.TabCur = e.currentTarget.dataset.id;
 				this.scrollLeft = (e.currentTarget.dataset.id - 1) * 60
+			},
+			toEditFollow(){
+				navigateUtil.navigateTo('/pages/crm/contact/follow_detail')
 			},
 			callPhone(){
 				uni.makePhoneCall({

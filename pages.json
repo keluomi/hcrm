@@ -53,6 +53,10 @@
             "path" : "pages/crm/contact/detail",
             "style" : {}
         }
+        ,{
+            "path" : "pages/crm/contact/follow_detail",
+            "style" : {}
+        }
     ],
     "globalStyle": {
     	"navigationBarTextStyle": "black",
