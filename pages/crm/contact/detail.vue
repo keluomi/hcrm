@@ -28,13 +28,13 @@
 	    
 		<scroll-view scroll-x class="bg-white nav margin-top">
 			<view class="flex text-center">
-				<view class="cu-item flex-sub" :class="'0'==TabCur?'text-orange cur':''"  @tap="tabSelect" :data-id="0">
+				<view class="cu-item flex-sub" :class="'0'==TabCur?'text-jianniaolan cur':''"  @tap="tabSelect" :data-id="0">
 					跟进记录
 				</view>
-				<view class="cu-item flex-sub" :class="'1'==TabCur?'text-orange cur':''"  @tap="tabSelect" :data-id="1">
+				<view class="cu-item flex-sub" :class="'1'==TabCur?'text-jianniaolan cur':''"  @tap="tabSelect" :data-id="1">
 					基本信息
 				</view>
-				<view class="cu-item flex-sub" :class="'2'==TabCur?'text-orange cur':''"  @tap="tabSelect" :data-id="2">
+				<view class="cu-item flex-sub" :class="'2'==TabCur?'text-jianniaolan cur':''"  @tap="tabSelect" :data-id="2">
 					相关信息
 				</view>
 			</view>
