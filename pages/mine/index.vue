@@ -20,23 +20,16 @@
 					</view>
 				</view>
 			</view>
+			
+			<view class="nav-list bg-white">
+				<navigator hover-class="none"  class="nav-li" navigateTo :class="'bg-'+item.color"
+				 :style="[{animation: 'show 1s 1'}]" v-for="(item,index) in elements" :key="index">
+					<view class="nav-title">{{item.title}}</view>
+					<!-- <view class="nav-name">{{item.name}}</view> -->
+					<!-- <text :class="'cuIcon-' + item.cuIcon"></text> -->
+				</navigator>
+			</view>
 
-<!-- 
-				<view class="qiun-charts3">
-					<canvas canvas-id="canvasArcbar1" id="canvasArcbar1" class="charts3" style="margin-left: 50upx;"></canvas>
-					<canvas canvas-id="canvasArcbar2" id="canvasArcbar2" class="charts3" style="margin-left: 280upx;"></canvas>
-					<canvas canvas-id="canvasArcbar3" id="canvasArcbar3" class="charts3" style="margin-left: 520upx;"></canvas>
-					
-				</view>
-					 -->		
-				<view class="grid  text-center col-3" style="height: 200rpx;">
-
-						<canvas canvas-id="canvasArcbar1" id="canvasArcbar1" class="charts3"></canvas>
-						<canvas canvas-id="canvasArcbar2" id="canvasArcbar2" class="charts3"></canvas>
-						<canvas canvas-id="canvasArcbar3" id="canvasArcbar3" class="charts3"></canvas>
-
-				
-				</view>
 			<fui-list :listData="settingList"></fui-list>
 			
 			<view class="cu-tabbar-height"></view>
@@ -46,11 +39,7 @@
 <script>
 	import fuiGrid from '@/components/fui-grid/fui-grid.vue'  
 	import fuiList from '@/components/fui-list/fui-list.vue'  
-	import uCharts from '@/components/u-charts/u-charts.js';
-	
-	var _self;
-	var canvaArcbar1;
-	
+
 	export default {
 		
 		components:{
@@ -64,97 +53,42 @@
 					avatar:'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg'
 				},
 				
-				
-				settingList:[{icon:'log',url:'', text:'我的日志'},
-							 {icon:'shenpi',url:'', text:'我发起的审批'},
+				settingList:[{icon:'log',url:'', text:'账号与安全'},
 							 {icon:'phone',url:'', text:'专属服务热线'},
-							{icon:'settingsfill',url:'', text:'系统设置'}],
+							 {icon:'notice',url:'', text:'系统通知'},
+							 {icon:'settingsfill',url:'', text:'系统设置'},
+							 {icon:'info',url:'', text:'关于'}],
 							
-				cWidth3:'',//圆弧进度图
-				cHeight3:'',//圆弧进度图
-				arcbarWidth:'',//圆弧进度图，进度条宽度,此设置可使各端宽度一致
-				pixelRatio:1
+				elements: [{
+						title: '企业通讯录',
+						name: 'bar',
+						color: 'olive',
+						cuIcon: 'vipcard'
+					},
+					{
+						title: '我的日志 ',
+						name: 'nav',
+						color: 'grey',
+						cuIcon: 'formfill'
+					},
+					{
+						title: '我发起的审批',
+						name: 'list',
+						color: 'green',
+						cuIcon: 'list'
+					},
+					{
+						title: '我的销售',
+						name: 'card',
+						color: 'cyan',
+						cuIcon: 'newsfill'
+					}]
 			};
-		},
-		methods: {
-			showArcbar(canvasId,chartData){
-				canvaArcbar1=new uCharts({
-					$this:_self,
-					canvasId: canvasId,
-					type: 'arcbar',
-					fontSize:11,
-					legend:{show:false},
-					background:'#FFFFFF',
-					pixelRatio:_self.pixelRatio,
-					series: chartData.series,
-					animation: true,
-					width: _self.cWidth3*_self.pixelRatio,
-					height: _self.cHeight3*_self.pixelRatio,
-					dataLabel: true,
-					title: {
-						name: chartData.series[0].data,
-						color: chartData.series[0].color,
-						fontSize: 20*_self.pixelRatio
-					},
-					subtitle: {
-						name: chartData.series[0].name,//这里您可以直接给任意字符串
-						color: '#666666',
-						fontSize: 11*_self.pixelRatio
-					},
-					extra: {
-						arcbar:{
-							type:'circle',//整圆类型进度条图
-							width: _self.arcbarWidth*_self.pixelRatio,//圆弧的宽度
-							startAngle:0.5//整圆类型只需配置起始角度即可
-						}
-					}
-				});
-				
-			},
-			onLoad() {
-				_self = this;
-				this.cWidth3=uni.upx2px(170);//这里要与样式的宽高对应
-				this.cHeight3=uni.upx2px(170);//这里要与样式的宽高对应
-				this.arcbarWidth=uni.upx2px(10);
-				
-				let data1 = {
-				  "series": [{
-					"name": "客户数",
-					"data": 8000,
-					"color": "#2fc77b"
-				  }]
-				};
-				
-				let data2 = {
-				  "series": [{
-					"name": "客户转换率",
-					"data": '65%',
-					"color": "#6644cc"
-				  }]
-				};
-				let data3 = {
-				  "series": [{
-					"name": "销售额",
-					"data": '400万',
-					"color": "#ee2746"
-				  }]
-				};
-
-				
-				_self.showArcbar("canvasArcbar1",data1);
-				_self.showArcbar("canvasArcbar2",data2);
-				_self.showArcbar("canvasArcbar3",data3);
-				}
-			}
+		}
 	}
 </script>
 
 <style lang="scss">
 
-	.charts3 {
-		align: center;
-		width: 250upx;
-		height: 250upx;
-		background-color: #FFFFFF;
-	}
+
 </style>

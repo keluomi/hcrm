@@ -1,6 +1,6 @@
 <template>
 	
-	<scroll-view scroll-y class="page">
+	<view>
 		<cu-custom :bgImage="'/static/header_bg.png'">
 			<block slot="content">
 				CRM
@@ -15,10 +15,9 @@
 				本月<text class="cuIcon-unfold"></text>
 			</view>
 		</view>
-		
 		<fui-grid :gridCol="2" :gridMode="'col'" :gridData="jianbaoList"></fui-grid>
-		<view class="cu-tabbar-height"></view>
-	</scroll-view>
+
+	</view>
 	
 </template>
 
@@ -36,7 +35,7 @@
 					cuIcon: 'kehu',
 					color: 'red',
 					name: '5个',
-					subName: '新增客户'
+					subName: '新增客户',
 				}, {
 					cuIcon: 'lianxiren',
 					color: 'orange',
@@ -66,7 +65,8 @@
 				cuIconList: [{
 					cuIcon: 'xiansuo',
 					color: 'red',
-					name: '线索'
+					name: '线索',
+					url: '/pages/crm/home'
 				}, {
 					cuIcon: 'kehu',
 					color: 'orange',
@@ -97,6 +97,11 @@
 					cuIcon: 'product',
 					color: 'mauve',
 					name: '产品'
+				}, {
+					cuIcon: 'product',
+					color: 'mauve',
+					name: '报表',
+					url: '/pages/crm/report/report'
 				}]
 			};
 		}
@@ -104,5 +109,7 @@
 </script>
 
 <style lang="scss">
-
+	.page {
+		height: 100vh;
+	}
 </style>
