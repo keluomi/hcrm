@@ -5,6 +5,9 @@
 				<block slot="content">
 					办公 
 				</block>
+				<view class="action">
+					<text class="cuIcon-roundadd text-white"></text>添加
+				</view>
 			</cu-custom>
 
 			<fui-grid :gridData="cuIconList"></fui-grid>
