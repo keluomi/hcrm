@@ -20,7 +20,7 @@
 					<block v-for="(item,index) in list" :key="index">
 						<view v-if="item.personList.length>0" :class="'indexItem-' + item.name" :id="'indexes-' + item.name" :data-index="item.name">
 							<view class="padding">{{item.name}}</view>
-							<navigator  hover-class="none" :url="'/pages/crm/contact/detail/detail'" :open-type="'navigate'">
+							<navigator  hover-class="none" :url="'/pages/crm/contact/detail'" :open-type="'navigate'">
 							<view class="cu-list menu-avatar no-padding">
 								
 								<view class="cu-item" v-for="(obj,sub) in item.personList" :key="sub">
