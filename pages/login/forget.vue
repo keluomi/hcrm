@@ -1,6 +1,11 @@
 <template>
 	<view class="forget">
-		
+		<cu-custom :isBack="true" :bgImage="'/static/header_bg.png'">
+			<block slot="backText">返回</block>
+			<block slot="content">
+				找回密码
+			</block>
+		</cu-custom>
 		<view class="content">
 			<!-- 主体 -->
 			<view class="main">
@@ -36,6 +41,7 @@
 			<wButton 
 				text="重置密码"
 				:rotate="isRotate" 
+				:bgColor="'#1491a8'"
 				@click.native="startRePass()"
 			></wButton>
 

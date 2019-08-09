@@ -5,7 +5,7 @@
 					我的
 				</block>
 			</cu-custom>
-			<view  style="background-image: url('/static/header_bg.png') ;">
+			<view  style="background-image: url('/static/mine_header.png') ;background-size: cover;background-position: center;background-repeat: no-repeat;">
 				<view class="grid margin-bottom text-center"  :class="'col-3'">
 					<view class="padding">
 						<view class="cu-avatar round lg margin-left"  :style="[{ backgroundImage:'url(' + userInfo.avatar + ')' }]">
@@ -13,10 +13,17 @@
 						</view>
 					</view>
 					<view class="padding">
-						
+						<view class="content flex-sub text-left">
+							<view class="text-grey">张文杰</view>
+							<view class="text-gray text-sm flex justify-between">
+									13521783226
+							</view>
+						</view>
 					</view>
 					<view class="padding">
-						
+						<view class="action">
+							<text class="cuIcon-right text-jianniaolan"></text>
+						</view>
 					</view>
 				</view>
 			</view>
@@ -57,7 +64,8 @@
 							 {icon:'phone',url:'', text:'专属服务热线'},
 							 {icon:'notice',url:'', text:'系统通知'},
 							 {icon:'settingsfill',url:'', text:'系统设置'},
-							 {icon:'info',url:'', text:'关于'}],
+							 {icon:'info',url:'', text:'关于'},
+							 {icon:'exit',color: 'red',openType: 'redirect', url:'/pages/login/login', text:'退出'}],
 							
 				elements: [{
 						title: '企业通讯录',
